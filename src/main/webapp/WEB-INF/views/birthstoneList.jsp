@@ -1,24 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Stone Detail</title>
+<title>Insert title here</title>
 <link rel="stylesheet" href="/css/style.css">
 <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 </head>
 <body>
 	<div class="inner main-inner">
-		<h1>${name} 님의 탄생석은?</h1>
-		<div class="desc-box flex">
-			<img src="${birthstone.imageURL}" />
-			<div class="desc-item flex">
-				<strong>${birthstone.imageURL}</strong>
-				<p>${birthstone.description}</p>
-			</div>
-		</div>
+		<h1>birthstone List</h1>
 	</div>
 	<script src="/js/particle.js"></script>
 </body>

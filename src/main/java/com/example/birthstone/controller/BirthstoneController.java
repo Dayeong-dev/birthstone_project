@@ -57,6 +57,6 @@ public class BirthstoneController {
 		model.addAttribute("birth", month);
 		model.addAttribute("birthstone", birthstone);
 		
-		return "birthstoneDetail";
+		return "detail";
 	}
 }
