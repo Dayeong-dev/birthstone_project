@@ -89,6 +89,16 @@ canvas{ display: block; vertical-align: bottom; }
     color: #333;
     font-size: 1rem;
 }
+.main-form-item select {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-size: 1rem;
+}
+
 
 /* 버튼 */
 .main-form button {
