@@ -45,7 +45,7 @@ public class BirthstoneController {
 		BirthstoneDTO birthstone = birthstoneService.getBirthstoneByMonth(month);
 		model.addAttribute("birthstone", birthstone);
 		
-		return "birthstoneDetail";
+		return "detail";
 	}
 	
 	// 탄생석 상세 조회 : 파라미터로 이름, 생년월일 값 전달

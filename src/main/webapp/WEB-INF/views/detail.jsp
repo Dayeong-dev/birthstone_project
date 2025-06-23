@@ -14,13 +14,15 @@
 	<div class="inner main-inner">
 		<h1>${name} 님의 탄생석은?</h1>
 		<div class="desc-box flex">
-			<img src="${birthstone.imageURL}" />
+			<img src="${birthstone.imageURL}"/>
 			<div class="desc-item flex">
 				<strong>${birth}월, ${birthstone.name}</strong>
 				<p>${birthstone.description}</p>
 			</div>
 		</div>
 	</div>
+	<a class="list-button" href="/">메인화면</a>
 	<script src="/js/particle.js"></script>
+	
 </body>
 </html>

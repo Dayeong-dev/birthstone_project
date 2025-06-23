@@ -11,18 +11,23 @@
 </head>
 <body>
 	<div id="particles-js" style="position:fixed; top:0; left:0; width:100%; height:100%; z-index:-1;"></div>
-	<div class="inner main-inner">
-		<h1>birthstone List</h1>
+	<div class="inner list-inner">
+		<h1>탄생석 목록</h1>
 		<div class="stone-wrap">
-			<c:forEach var="stone" items="${topFiveAmount}" varStatus="status">
-		        <div class="stoneItem-box" onclick="stoneDetail(${book.book_id})">
-		            <img src="${book.image_url}" alt="책이미지">
-		            <strong>${book.title}</strong>
-		            <p>${book.writer}</p>
+			<c:forEach var="stone" items="${birthstoneList}" varStatus="status">
+		        <div class="stoneItem-box flex" onclick="stoneDetail(${stone.month})">
+		            <img src="${stone.imageURL}" alt="탄생석 이미지">
+		            <strong>${stone.month}월, ${stone.name}</strong>
 		        </div>
 		    </c:forEach>
 		</div>
 	</div>
+	<a class="list-button" href="/">메인화면</a>
 	<script src="/js/particle.js"></script>
+	<script>
+	function stoneDetail(month){
+		location.href="/birthstone/detail?month=" + month;
+	}
+	</script>
 </body>
 </html>
