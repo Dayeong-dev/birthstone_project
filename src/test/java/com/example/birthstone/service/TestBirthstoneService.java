@@ -1,5 +1,6 @@
 package com.example.birthstone.service;
 
+import java.util.List;
 import java.util.stream.IntStream;
 
 import org.junit.jupiter.api.Test;
@@ -14,8 +15,11 @@ public class TestBirthstoneService {
 	
 	@Autowired
 	private IBirthstoneDao birthstoneDao;
+	
+	@Autowired
+	private BirthstoneService birthstoneService;
 
-	@Test
+	//@Test
 	public void setDummies() {
 		String[] names = {"가넷", "자수정", "아쿠아마린", "다이아몬드", "에메랄드", "진주", "루비", "페리도트", "사파이어", "오팔", "토파즈", "터키석"};
 		String[] engNames = {"Garnet", "Amethyst", "Aquamarine", "Diamond", "Emerald", "Pearl", "Ruby", "Peridot", "Sapphire", "Opal", "Topaz", "Turquoies"};
@@ -31,5 +35,22 @@ public class TestBirthstoneService {
 			
 			birthstoneDao.setBirthstone(birthstoneDTO);
 		});
+	}
+	
+	//@Test
+	public void testGetList() {
+		List<BirthstoneDTO> blist = birthstoneService.getAllBirthstone();
+		
+		for(BirthstoneDTO b : blist) {
+			System.out.println(b);
+		}
+	}
+	
+	@Test
+	public void testGetDetail() {
+		int month = 11;
+		
+		BirthstoneDTO b = birthstoneService.getBirthstoneByMonth(month);
+		System.out.println(b);
 	}
 }
