@@ -115,3 +115,30 @@ canvas{ display: block; vertical-align: bottom; }
 .main-form button:hover {
     background-color: #0097a7;
 }
+.desc-box{
+	background-color: #fff;
+	color:black;
+	padding:25px;
+	border-radius: 15px;
+	gap:15px;
+    margin-bottom: 100px;
+}
+
+.desc-item{	
+	flex-direction: column;
+}
+.desc-item strong{
+	font-size:20px;
+}
+.desc-item p{
+	font-size:18px;
+}
+
+.list-button{
+	position:absolute;
+	top:0;
+	right:0;
+	color:white;
+	font-size:20px;
+}
+

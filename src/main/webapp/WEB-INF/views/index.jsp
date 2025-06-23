@@ -39,5 +39,7 @@
 			<button type="submit">확인</button>
 		</form>
 	</div>
+	
+	<a class="list-button" href="/birthstone/all">탄생석 목록</a>
 </body>	
 </html>
