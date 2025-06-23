@@ -13,7 +13,7 @@
 	<script src="/js/particle.js"></script>
 	<div class="inner main-inner">
 		<h1>Birth Stone</h1>
-		<form class="main-form flex" action="" method="post">
+		<form class="main-form flex" action="/birthstone/search" method="post">
 			<div class="main-form-item">
 				<label for="name">이름</label>
 				<input type="text" name="name">
